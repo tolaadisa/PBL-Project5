@@ -1,9 +1,10 @@
 ### CLIENT-SERVER ARCHITECTURE WITH MYSQL
-
+ I will start this project off by creating two EC2 instances on AWS. One will be called mysql-client and the other will be called mysql-server. The objective of this exercise is to create a test_db database on the client and then remotely accessing this databse from the client without using the ssh comment. 
 
 #### SERVER Instance
 
-Start off by connecting to the server and updating the server's package index:
+Start off by connecting to the mysql-server instance and updating the server's package index:
+
 `sudo apt update -y`
 
 Then install mysql on the server with the code:
@@ -19,7 +20,8 @@ Run the following:
 
 #### CLIENT Instance
 
-Start off by updating the client's package index:
+Now go to the mysql-client instance and start off by updating the client's package index:
+
 `sudo apt update -y`
 
 Then install mysql on the client with the code:
